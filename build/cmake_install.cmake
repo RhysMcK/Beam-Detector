@@ -1,4 +1,4 @@
-# Install script for directory: /home/ufr/pcl_beam_detection
+# Install script for directory: /home/tim/Beam-Detector
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ufr/pcl_beam_detection/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tim/Beam-Detector/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

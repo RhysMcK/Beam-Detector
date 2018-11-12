@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ufr/pcl_beam_detection
+CMAKE_SOURCE_DIR = /home/tim/Beam-Detector
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ufr/pcl_beam_detection/build
+CMAKE_BINARY_DIR = /home/tim/Beam-Detector/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ufr/pcl_beam_detection/build/CMakeFiles /home/ufr/pcl_beam_detection/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Beam-Detector/build/CMakeFiles /home/tim/Beam-Detector/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ufr/pcl_beam_detection/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/Beam-Detector/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Global_hypothesis_verification
+
+# Build rule for target.
+Global_hypothesis_verification: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Global_hypothesis_verification
+.PHONY : Global_hypothesis_verification
+
+# fast build rule for target.
+Global_hypothesis_verification/fast:
+	$(MAKE) -f CMakeFiles/Global_hypothesis_verification.dir/build.make CMakeFiles/Global_hypothesis_verification.dir/build
+.PHONY : Global_hypothesis_verification/fast
+
+#=============================================================================
 # Target rules for targets named beam_detector
 
 # Build rule for target.
@@ -122,6 +135,99 @@ beam_detector: cmake_check_build_system
 beam_detector/fast:
 	$(MAKE) -f CMakeFiles/beam_detector.dir/build.make CMakeFiles/beam_detector.dir/build
 .PHONY : beam_detector/fast
+
+#=============================================================================
+# Target rules for targets named beam_cluster
+
+# Build rule for target.
+beam_cluster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 beam_cluster
+.PHONY : beam_cluster
+
+# fast build rule for target.
+beam_cluster/fast:
+	$(MAKE) -f CMakeFiles/beam_cluster.dir/build.make CMakeFiles/beam_cluster.dir/build
+.PHONY : beam_cluster/fast
+
+#=============================================================================
+# Target rules for targets named view_pcd
+
+# Build rule for target.
+view_pcd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 view_pcd
+.PHONY : view_pcd
+
+# fast build rule for target.
+view_pcd/fast:
+	$(MAKE) -f CMakeFiles/view_pcd.dir/build.make CMakeFiles/view_pcd.dir/build
+.PHONY : view_pcd/fast
+
+#=============================================================================
+# Target rules for targets named correspondence_grouping
+
+# Build rule for target.
+correspondence_grouping: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 correspondence_grouping
+.PHONY : correspondence_grouping
+
+# fast build rule for target.
+correspondence_grouping/fast:
+	$(MAKE) -f CMakeFiles/correspondence_grouping.dir/build.make CMakeFiles/correspondence_grouping.dir/build
+.PHONY : correspondence_grouping/fast
+
+src/Global_hypothesis_verification.o: src/Global_hypothesis_verification.cpp.o
+
+.PHONY : src/Global_hypothesis_verification.o
+
+# target to build an object file
+src/Global_hypothesis_verification.cpp.o:
+	$(MAKE) -f CMakeFiles/Global_hypothesis_verification.dir/build.make CMakeFiles/Global_hypothesis_verification.dir/src/Global_hypothesis_verification.cpp.o
+.PHONY : src/Global_hypothesis_verification.cpp.o
+
+src/Global_hypothesis_verification.i: src/Global_hypothesis_verification.cpp.i
+
+.PHONY : src/Global_hypothesis_verification.i
+
+# target to preprocess a source file
+src/Global_hypothesis_verification.cpp.i:
+	$(MAKE) -f CMakeFiles/Global_hypothesis_verification.dir/build.make CMakeFiles/Global_hypothesis_verification.dir/src/Global_hypothesis_verification.cpp.i
+.PHONY : src/Global_hypothesis_verification.cpp.i
+
+src/Global_hypothesis_verification.s: src/Global_hypothesis_verification.cpp.s
+
+.PHONY : src/Global_hypothesis_verification.s
+
+# target to generate assembly for a file
+src/Global_hypothesis_verification.cpp.s:
+	$(MAKE) -f CMakeFiles/Global_hypothesis_verification.dir/build.make CMakeFiles/Global_hypothesis_verification.dir/src/Global_hypothesis_verification.cpp.s
+.PHONY : src/Global_hypothesis_verification.cpp.s
+
+src/beam_cluster.o: src/beam_cluster.cpp.o
+
+.PHONY : src/beam_cluster.o
+
+# target to build an object file
+src/beam_cluster.cpp.o:
+	$(MAKE) -f CMakeFiles/beam_cluster.dir/build.make CMakeFiles/beam_cluster.dir/src/beam_cluster.cpp.o
+.PHONY : src/beam_cluster.cpp.o
+
+src/beam_cluster.i: src/beam_cluster.cpp.i
+
+.PHONY : src/beam_cluster.i
+
+# target to preprocess a source file
+src/beam_cluster.cpp.i:
+	$(MAKE) -f CMakeFiles/beam_cluster.dir/build.make CMakeFiles/beam_cluster.dir/src/beam_cluster.cpp.i
+.PHONY : src/beam_cluster.cpp.i
+
+src/beam_cluster.s: src/beam_cluster.cpp.s
+
+.PHONY : src/beam_cluster.s
+
+# target to generate assembly for a file
+src/beam_cluster.cpp.s:
+	$(MAKE) -f CMakeFiles/beam_cluster.dir/build.make CMakeFiles/beam_cluster.dir/src/beam_cluster.cpp.s
+.PHONY : src/beam_cluster.cpp.s
 
 src/beam_detector.o: src/beam_detector.cpp.o
 
@@ -150,18 +256,88 @@ src/beam_detector.cpp.s:
 	$(MAKE) -f CMakeFiles/beam_detector.dir/build.make CMakeFiles/beam_detector.dir/src/beam_detector.cpp.s
 .PHONY : src/beam_detector.cpp.s
 
+src/correspondence_grouping.o: src/correspondence_grouping.cpp.o
+
+.PHONY : src/correspondence_grouping.o
+
+# target to build an object file
+src/correspondence_grouping.cpp.o:
+	$(MAKE) -f CMakeFiles/correspondence_grouping.dir/build.make CMakeFiles/correspondence_grouping.dir/src/correspondence_grouping.cpp.o
+.PHONY : src/correspondence_grouping.cpp.o
+
+src/correspondence_grouping.i: src/correspondence_grouping.cpp.i
+
+.PHONY : src/correspondence_grouping.i
+
+# target to preprocess a source file
+src/correspondence_grouping.cpp.i:
+	$(MAKE) -f CMakeFiles/correspondence_grouping.dir/build.make CMakeFiles/correspondence_grouping.dir/src/correspondence_grouping.cpp.i
+.PHONY : src/correspondence_grouping.cpp.i
+
+src/correspondence_grouping.s: src/correspondence_grouping.cpp.s
+
+.PHONY : src/correspondence_grouping.s
+
+# target to generate assembly for a file
+src/correspondence_grouping.cpp.s:
+	$(MAKE) -f CMakeFiles/correspondence_grouping.dir/build.make CMakeFiles/correspondence_grouping.dir/src/correspondence_grouping.cpp.s
+.PHONY : src/correspondence_grouping.cpp.s
+
+src/view_pcd.o: src/view_pcd.cpp.o
+
+.PHONY : src/view_pcd.o
+
+# target to build an object file
+src/view_pcd.cpp.o:
+	$(MAKE) -f CMakeFiles/view_pcd.dir/build.make CMakeFiles/view_pcd.dir/src/view_pcd.cpp.o
+.PHONY : src/view_pcd.cpp.o
+
+src/view_pcd.i: src/view_pcd.cpp.i
+
+.PHONY : src/view_pcd.i
+
+# target to preprocess a source file
+src/view_pcd.cpp.i:
+	$(MAKE) -f CMakeFiles/view_pcd.dir/build.make CMakeFiles/view_pcd.dir/src/view_pcd.cpp.i
+.PHONY : src/view_pcd.cpp.i
+
+src/view_pcd.s: src/view_pcd.cpp.s
+
+.PHONY : src/view_pcd.s
+
+# target to generate assembly for a file
+src/view_pcd.cpp.s:
+	$(MAKE) -f CMakeFiles/view_pcd.dir/build.make CMakeFiles/view_pcd.dir/src/view_pcd.cpp.s
+.PHONY : src/view_pcd.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... Global_hypothesis_verification"
 	@echo "... beam_detector"
+	@echo "... beam_cluster"
+	@echo "... rebuild_cache"
+	@echo "... view_pcd"
+	@echo "... edit_cache"
+	@echo "... correspondence_grouping"
+	@echo "... src/Global_hypothesis_verification.o"
+	@echo "... src/Global_hypothesis_verification.i"
+	@echo "... src/Global_hypothesis_verification.s"
+	@echo "... src/beam_cluster.o"
+	@echo "... src/beam_cluster.i"
+	@echo "... src/beam_cluster.s"
 	@echo "... src/beam_detector.o"
 	@echo "... src/beam_detector.i"
 	@echo "... src/beam_detector.s"
+	@echo "... src/correspondence_grouping.o"
+	@echo "... src/correspondence_grouping.i"
+	@echo "... src/correspondence_grouping.s"
+	@echo "... src/view_pcd.o"
+	@echo "... src/view_pcd.i"
+	@echo "... src/view_pcd.s"
 .PHONY : help
 
 

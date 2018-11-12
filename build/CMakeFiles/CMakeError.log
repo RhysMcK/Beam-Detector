@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/ufr/pcl_beam_detection/build/CMakeFiles/CMakeTmp
+Change Dir: /home/tim/Beam-Detector/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_69152/fast"
-/usr/bin/make -f CMakeFiles/cmTC_69152.dir/build.make CMakeFiles/cmTC_69152.dir/build
-make[1]: Entering directory '/home/ufr/pcl_beam_detection/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_69152.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_69152.dir/CheckSymbolExists.c.o   -c /home/ufr/pcl_beam_detection/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_69152
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69152.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_69152.dir/CheckSymbolExists.c.o  -o cmTC_69152 -rdynamic 
-CMakeFiles/cmTC_69152.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_c6791/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c6791.dir/build.make CMakeFiles/cmTC_c6791.dir/build
+make[1]: Entering directory '/home/tim/Beam-Detector/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6791.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_c6791.dir/CheckSymbolExists.c.o   -c /home/tim/Beam-Detector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c6791
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6791.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c6791.dir/CheckSymbolExists.c.o  -o cmTC_c6791 -rdynamic 
+CMakeFiles/cmTC_c6791.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_69152.dir/build.make:97: recipe for target 'cmTC_69152' failed
-make[1]: *** [cmTC_69152] Error 1
-make[1]: Leaving directory '/home/ufr/pcl_beam_detection/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_69152/fast' failed
-make: *** [cmTC_69152/fast] Error 2
+CMakeFiles/cmTC_c6791.dir/build.make:97: recipe for target 'cmTC_c6791' failed
+make[1]: *** [cmTC_c6791] Error 1
+make[1]: Leaving directory '/home/tim/Beam-Detector/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c6791/fast' failed
+make: *** [cmTC_c6791/fast] Error 2
 
-File /home/ufr/pcl_beam_detection/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/tim/Beam-Detector/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/ufr/pcl_beam_detection/build/CMakeFiles/CMakeTmp
+Change Dir: /home/tim/Beam-Detector/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e30c3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e30c3.dir/build.make CMakeFiles/cmTC_e30c3.dir/build
-make[1]: Entering directory '/home/ufr/pcl_beam_detection/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e30c3.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e30c3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e30c3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e30c3.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e30c3.dir/CheckFunctionExists.c.o  -o cmTC_e30c3 -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_bd413/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd413.dir/build.make CMakeFiles/cmTC_bd413.dir/build
+make[1]: Entering directory '/home/tim/Beam-Detector/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd413.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_bd413.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bd413
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd413.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_bd413.dir/CheckFunctionExists.c.o  -o cmTC_bd413 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_e30c3.dir/build.make:97: recipe for target 'cmTC_e30c3' failed
-make[1]: *** [cmTC_e30c3] Error 1
-make[1]: Leaving directory '/home/ufr/pcl_beam_detection/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_e30c3/fast' failed
-make: *** [cmTC_e30c3/fast] Error 2
+CMakeFiles/cmTC_bd413.dir/build.make:97: recipe for target 'cmTC_bd413' failed
+make[1]: *** [cmTC_bd413] Error 1
+make[1]: Leaving directory '/home/tim/Beam-Detector/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bd413/fast' failed
+make: *** [cmTC_bd413/fast] Error 2
 
 

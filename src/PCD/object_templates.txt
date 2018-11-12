@@ -1,0 +1,3 @@
+# A list of point clouds to try aligning
+/home/tim/Beam-Detector/src/PCD/outcloud.pcd
+/home/tim/Beam-Detector/src/PCD/pointcloud_beam.pcd
